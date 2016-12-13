@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+
+<!--Kokoro Naruke  final Dec 2016. This is the website that I made for final.-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>CATS WEB SITE</title>
+    <!--Typeface-->
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	<!--CSS that I made-->
+	<link rel="stylesheet" type="text/css" href="pages/style2.css">
+	<!--Bootstrap css-->
+	<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">-->
+	<!--jQuery-->
+    <script type="text/javascript" src="pages/jquery-3.1.1.min.js"></script>
+    <!--Bootstrap JS-->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <!--humbergar menu-->
+    <script>$(document).ready(function(){$(".menu-trigger").click(function(){$(this).toggleClass("active");$(this).next().toggleClass("onanimation");$('ul li').hide();$('ul li').each(function(i){$(this).delay(80*i).fadeIn(500);});});});</script>
+
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+</head>
+
+<!--This is the top page. I put the video as a background to make viewers have fun. 
+Also, I used JavaScript and made a hamberger menu.-->
+
+<body>
+	<div class="logo"> 
+		<a href="index.html"><img src="images/logo.png" width="250px" onmouseover="this.src='images/logo.gif';" onmouseout="this.src='images/logo.png';"></a>
+	</div> 
+
+    <div class="gblnv_box">
+    <a class="menu-trigger" href="#">
+    <span></span>
+    <span></span>
+    <span></span>
+    </a>
+    <div class="gblnv_block">
+    <ul class="gblnv_list">
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/blog.html">Products</a></li>
+        <li><a href="pages/cats.html">Breeds</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+    </div>
+
+	
+    <video autoplay loop poster="../images/cat_start.png" id="bgvid">
+    <source src="pages/movie/cats.webm" type="video/webm">
+    <source src="pages/movie/cats.mp4" type="video/mp4">
+    </video>
+
+ 
+    </div>
+
+    
+
+</body>
+</html>
